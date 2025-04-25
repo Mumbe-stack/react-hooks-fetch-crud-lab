@@ -7,7 +7,8 @@ function App() {
   const [page, setPage] = useState("List");
 
   return (
-    <main>
+    <main className="App">
+      <h1>Quiz Admin</h1>
       <AdminNavBar onChangePage={setPage} />
       {page === "Form" ? <QuestionForm /> : <QuestionList />}
     </main>
